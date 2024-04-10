@@ -248,6 +248,9 @@ void motorMenu (){
         case 10:
             //
             LcClear();
+            LcClear();
+             LcClear();
+            LcClear();
             break;
 }
 }
