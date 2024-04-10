@@ -240,6 +240,10 @@ void motorMenu (){
             break;
         case 9:
             
+            
+            
+            
+            LcClear();
             break;
         case 10:
             //
