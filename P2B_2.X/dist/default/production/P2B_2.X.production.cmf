@@ -1,0 +1,1300 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 12 12 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$dist/default/production\P2B_2.X.production.o
+cinit CODE 0 CBC CBC 5E 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 E08 E08 46 1 2
+text1 CODE 0 104C 104C 20 1 2
+text2 CODE 0 260 260 1F4 1 2
+text3 CODE 0 7C8 7C8 BE 1 2
+text4 CODE 0 10B8 10B8 12 1 2
+text5 CODE 0 E4E E4E 42 1 2
+text6 CODE 0 5F4 5F4 FA 1 2
+text7 CODE 0 FAA FAA 2C 1 2
+text8 CODE 0 10FC 10FC 4 1 2
+text9 CODE 0 454 454 1A0 1 2
+text10 CODE 0 10DA 10DA E 1 2
+text11 CODE 0 1100 1100 4 1 2
+text12 CODE 0 1104 1104 4 1 2
+text13 CODE 0 9EA 9EA 8C 1 2
+text14 CODE 0 A76 A76 7E 1 2
+text15 CODE 0 940 940 AA 1 2
+text16 CODE 0 F46 F46 32 1 2
+text17 CODE 0 106C 106C 1A 1 2
+text18 CODE 0 AF4 AF4 7E 1 2
+text19 CODE 0 ECE ECE 3C 1 2
+text20 CODE 0 1086 1086 1A 1 2
+text21 CODE 0 10E8 10E8 A 1 2
+text22 CODE 0 FD6 FD6 2C 1 2
+text23 CODE 0 F0A F0A 3C 1 2
+text24 CODE 0 6EE 6EE DA 1 2
+text25 CODE 0 D72 D72 4C 1 2
+text26 CODE 0 D1A D1A 58 1 2
+text27 CODE 0 DBE DBE 4A 1 2
+text28 CODE 0 B72 B72 7A 1 2
+text29 CODE 0 F78 F78 32 1 2
+text30 CODE 0 BEC BEC 68 1 2
+text31 CODE 0 C54 C54 68 1 2
+text32 CODE 0 10F2 10F2 A 1 2
+text33 CODE 0 1002 1002 26 1 2
+text34 CODE 0 1028 1028 24 1 2
+text35 CODE 0 E90 E90 3E 1 2
+text36 CODE 0 10CA 10CA 10 1 2
+text38 CODE 0 10A0 10A0 18 1 2
+idataCOMRAM CODE 0 1108 1108 2 1 1
+cstackCOMRAM COMRAM 1 62 62 1B 1 1
+temp COMRAM 1 7F 7F 1 1 1
+bssBANK0 BANK0 1 80 80 7B 1 1
+intcode CODE 0 8 8 A 1 2
+smallconst SMALLCONST 0 200 200 60 1 2
+idataBANK1 CODE 0 886 886 BA 1 1
+dataBANK1 BANK1 1 100 100 BA 1 1
+dataCOMRAM COMRAM 1 7D 7D 2 1 1
+bssCOMRAM COMRAM 1 1 1 61 1 1
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM FB-FF 1
+RAM 1BA-1FF 1
+SFR F80-FFF 1
+BANK0 FB-FF 1
+BANK1 1BA-1FF 1
+CONST 4-7 1
+CONST 16-1FF 1
+CONST 110A-1FFF 1
+SMALLCONST 110A-1FFF 1
+CODE 4-7 1
+CODE 16-1FF 1
+CODE 110A-1FFF 1
+BIGRAM FB-FF 1
+BIGRAM 1BA-1FF 1
+BIGSFR F80-FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 110A-1FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\P2B_2.X.production.o
+8 intcode CODE >10739:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+8 intcode CODE >23:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+A intcode CODE >24:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E intcode CODE >26:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+10A0 text38 CODE >25:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+10A0 text38 CODE >27:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+10A8 text38 CODE >28:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+10AA text38 CODE >29:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+10B6 text38 CODE >34:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+10CA text36 CODE >13:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+10CA text36 CODE >14:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+10CC text36 CODE >15:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+10D0 text36 CODE >16:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+10D4 text36 CODE >17:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+10D8 text36 CODE >18:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+E90 text35 CODE >47:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+E90 text35 CODE >48:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+E94 text35 CODE >49:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+E96 text35 CODE >50:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+EA0 text35 CODE >49:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+EB2 text35 CODE >52:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+EC2 text35 CODE >53:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+ECC text35 CODE >55:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+1028 text34 CODE >57:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+102A text34 CODE >58:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+104A text34 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+1002 text33 CODE >19:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+1002 text33 CODE >20:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+1004 text33 CODE >21:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+1006 text33 CODE >22:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+100E text33 CODE >23:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+1014 text33 CODE >24:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+101C text33 CODE >25:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+1022 text33 CODE >26:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+1026 text33 CODE >27:C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+10F2 text32 CODE >28:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+10F2 text32 CODE >36:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+10F6 text32 CODE >37:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+10FA text32 CODE >39:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+C54 text31 CODE >249:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C56 text31 CODE >250:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C6C text31 CODE >251:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C86 text31 CODE >252:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C9E text31 CODE >253:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+CBA text31 CODE >254:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+BEC text30 CODE >256:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+BEE text30 CODE >257:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C04 text30 CODE >258:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C1E text30 CODE >259:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C36 text30 CODE >260:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+C52 text30 CODE >261:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F78 text29 CODE >263:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F7A text29 CODE >264:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F82 text29 CODE >265:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F84 text29 CODE >266:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F86 text29 CODE >267:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F88 text29 CODE >268:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F8E text29 CODE >269:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F90 text29 CODE >270:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F92 text29 CODE >271:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F94 text29 CODE >272:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F96 text29 CODE >273:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F9C text29 CODE >274:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F9E text29 CODE >275:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+FA0 text29 CODE >276:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+FA8 text29 CODE >277:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+B72 text28 CODE >313:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+B74 text28 CODE >315:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+B80 text28 CODE >316:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+B84 text28 CODE >317:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+B9A text28 CODE >318:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+BB4 text28 CODE >319:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+BCC text28 CODE >320:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+BE8 text28 CODE >321:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+BEA text28 CODE >322:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+DBE text27 CODE >62:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+DBE text27 CODE >63:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+DD2 text27 CODE >64:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+E06 text27 CODE >65:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+D1A text26 CODE >244:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D1C text26 CODE >245:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D22 text26 CODE >246:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D72 text25 CODE >295:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D72 text25 CODE >296:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D7A text25 CODE >297:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D7C text25 CODE >298:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D7E text25 CODE >299:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D84 text25 CODE >301:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D88 text25 CODE >302:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D90 text25 CODE >303:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D92 text25 CODE >304:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D94 text25 CODE >305:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D98 text25 CODE >307:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D9A text25 CODE >308:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+D9C text25 CODE >309:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+DB6 text25 CODE >310:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+6EE text24 CODE >68:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+6F0 text24 CODE >76:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+6F8 text24 CODE >77:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+700 text24 CODE >78:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+708 text24 CODE >79:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+70E text24 CODE >80:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+716 text24 CODE >81:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+724 text24 CODE >84:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+72A text24 CODE >85:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+738 text24 CODE >86:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+73E text24 CODE >87:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+74C text24 CODE >88:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+752 text24 CODE >89:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+760 text24 CODE >92:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+766 text24 CODE >93:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+774 text24 CODE >94:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+77A text24 CODE >97:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+784 text24 CODE >98:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+78E text24 CODE >99:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+79C text24 CODE >100:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+7A6 text24 CODE >101:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+7B0 text24 CODE >102:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+7C6 text24 CODE >107:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F0A text23 CODE >121:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F0A text23 CODE >122:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F0E text23 CODE >123:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F12 text23 CODE >124:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F16 text23 CODE >125:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F1E text23 CODE >126:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F24 text23 CODE >127:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F2C text23 CODE >128:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F32 text23 CODE >129:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F3A text23 CODE >130:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F40 text23 CODE >131:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+F44 text23 CODE >132:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+FD6 text22 CODE >36:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+FD6 text22 CODE >37:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+FDA text22 CODE >38:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+FE8 text22 CODE >39:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+FF0 text22 CODE >40:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+FF4 text22 CODE >41:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+FFC text22 CODE >42:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+FFE text22 CODE >43:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+1000 text22 CODE >45:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+10E8 text21 CODE >28:C:\Users\nurco\MPLABXProjects\P2B_2.X\TEEPROM.c
+10E8 text21 CODE >29:C:\Users\nurco\MPLABXProjects\P2B_2.X\TEEPROM.c
+10EA text21 CODE >30:C:\Users\nurco\MPLABXProjects\P2B_2.X\TEEPROM.c
+10EC text21 CODE >31:C:\Users\nurco\MPLABXProjects\P2B_2.X\TEEPROM.c
+10F0 text21 CODE >32:C:\Users\nurco\MPLABXProjects\P2B_2.X\TEEPROM.c
+1086 text20 CODE >25:C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+1086 text20 CODE >26:C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+108E text20 CODE >27:C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+1094 text20 CODE >28:C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+109E text20 CODE >29:C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+ECE text19 CODE >41:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+ECE text19 CODE >42:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+ED2 text19 CODE >43:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+ED6 text19 CODE >44:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+EDE text19 CODE >45:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+EE6 text19 CODE >46:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+EEC text19 CODE >47:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+EF2 text19 CODE >48:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+EFA text19 CODE >49:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+EFE text19 CODE >50:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+F02 text19 CODE >51:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+F04 text19 CODE >52:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+F08 text19 CODE >54:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+AF4 text18 CODE >22:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+AF4 text18 CODE >23:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+AF6 text18 CODE >27:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+AFA text18 CODE >28:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+AFC text18 CODE >30:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+AFE text18 CODE >31:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+AFE text18 CODE >32:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B02 text18 CODE >33:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B06 text18 CODE >34:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B0C text18 CODE >39:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B12 text18 CODE >40:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B16 text18 CODE >41:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B1A text18 CODE >42:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B1C text18 CODE >43:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B22 text18 CODE >48:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B28 text18 CODE >49:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B2C text18 CODE >50:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B30 text18 CODE >51:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B32 text18 CODE >52:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B38 text18 CODE >56:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B3C text18 CODE >57:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B40 text18 CODE >58:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B42 text18 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B4C text18 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B54 text18 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B5A text18 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B60 text18 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B66 text18 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+B6C text18 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+106C text17 CODE >114:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+106C text17 CODE >117:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+1076 text17 CODE >118:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+1084 text17 CODE >119:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F46 text16 CODE >279:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F48 text16 CODE >280:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F50 text16 CODE >281:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F52 text16 CODE >282:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F54 text16 CODE >283:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F56 text16 CODE >284:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F5C text16 CODE >285:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F5E text16 CODE >286:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F60 text16 CODE >287:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F62 text16 CODE >288:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F64 text16 CODE >289:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F6A text16 CODE >290:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F6C text16 CODE >291:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F6E text16 CODE >292:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+F76 text16 CODE >293:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+940 text15 CODE >135:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+942 text15 CODE >141:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+944 text15 CODE >143:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+968 text15 CODE >144:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+968 text15 CODE >145:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+96E text15 CODE >146:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+978 text15 CODE >147:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+988 text15 CODE >148:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9A6 text15 CODE >149:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9A8 text15 CODE >151:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9A8 text15 CODE >152:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9B0 text15 CODE >153:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9BA text15 CODE >153:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9C2 text15 CODE >153:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9C8 text15 CODE >153:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9CE text15 CODE >153:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9D4 text15 CODE >155:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9D8 text15 CODE >156:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9E0 text15 CODE >158:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9E4 text15 CODE >159:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9E8 text15 CODE >160:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A76 text14 CODE >162:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A78 text14 CODE >172:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A82 text14 CODE >174:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A84 text14 CODE >175:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A8C text14 CODE >176:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A92 text14 CODE >177:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A96 text14 CODE >178:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+AA2 text14 CODE >179:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+AAE text14 CODE >182:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+AB6 text14 CODE >183:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+ABC text14 CODE >184:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+AC0 text14 CODE >185:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+ACC text14 CODE >186:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+AD8 text14 CODE >189:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+ADE text14 CODE >190:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+AE8 text14 CODE >191:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+AF2 text14 CODE >193:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9EA text13 CODE >206:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9EA text13 CODE >207:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9EC text13 CODE >209:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9F4 text13 CODE >210:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9F8 text13 CODE >211:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+9FC text13 CODE >214:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A14 text13 CODE >215:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A2A text13 CODE >216:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A2E text13 CODE >218:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A46 text13 CODE >219:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A4A text13 CODE >224:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A4E text13 CODE >225:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A52 text13 CODE >229:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A5C text13 CODE >229:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A64 text13 CODE >229:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A6A text13 CODE >229:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+A70 text13 CODE >229:C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+1104 text12 CODE >61:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+1104 text12 CODE >62:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+1106 text12 CODE >63:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+1100 text11 CODE >65:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+1100 text11 CODE >66:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+1102 text11 CODE >67:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+10DA text10 CODE >58:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+10DC text10 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+10E6 text10 CODE >60:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+454 text9 CODE >157:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+454 text9 CODE >158:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+456 text9 CODE >160:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+45C text9 CODE >161:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+466 text9 CODE >162:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+468 text9 CODE >163:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+46C text9 CODE >164:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+476 text9 CODE >165:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+47C text9 CODE >169:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+486 text9 CODE >170:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+48C text9 CODE >175:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+496 text9 CODE >176:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4A0 text9 CODE >177:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4AA text9 CODE >178:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4B4 text9 CODE >180:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4B8 text9 CODE >182:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4BC text9 CODE >183:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4C6 text9 CODE >184:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4C8 text9 CODE >187:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4CE text9 CODE >188:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4D8 text9 CODE >189:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4DA text9 CODE >190:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4DE text9 CODE >191:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4EA text9 CODE >197:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+4FE text9 CODE >198:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+504 text9 CODE >204:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+50E text9 CODE >205:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+518 text9 CODE >206:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+522 text9 CODE >207:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+52C text9 CODE >209:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+530 text9 CODE >211:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+534 text9 CODE >212:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+53E text9 CODE >214:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+540 text9 CODE >217:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+546 text9 CODE >218:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+550 text9 CODE >219:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+552 text9 CODE >220:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+556 text9 CODE >221:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+562 text9 CODE >226:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+56C text9 CODE >227:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+572 text9 CODE >232:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+57C text9 CODE >233:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+586 text9 CODE >234:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+590 text9 CODE >236:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+594 text9 CODE >238:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+598 text9 CODE >239:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5A2 text9 CODE >240:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5A4 text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5AE text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5B6 text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5BC text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5C2 text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5C8 text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5CE text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5D4 text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5DA text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5E0 text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5E6 text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+5EC text9 CODE >247:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+10FC text8 CODE >144:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+10FC text8 CODE >145:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+10FE text8 CODE >146:C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+FAA text7 CODE >97:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FAA text7 CODE >98:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FAE text7 CODE >100:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FB2 text7 CODE >101:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FB6 text7 CODE >102:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FBA text7 CODE >104:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FBE text7 CODE >105:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FC2 text7 CODE >106:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FC6 text7 CODE >108:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FCA text7 CODE >109:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FCE text7 CODE >110:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FD2 text7 CODE >111:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FD2 text7 CODE >112:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+FD4 text7 CODE >113:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+5F4 text6 CODE >115:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+5F4 text6 CODE >117:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+5FA text6 CODE >118:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+600 text6 CODE >119:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+604 text6 CODE >121:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+60C text6 CODE >122:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+614 text6 CODE >123:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+618 text6 CODE >124:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+61A text6 CODE >125:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+61C text6 CODE >127:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+620 text6 CODE >129:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+628 text6 CODE >130:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+630 text6 CODE >131:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+634 text6 CODE >132:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+636 text6 CODE >133:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+638 text6 CODE >135:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+63C text6 CODE >139:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+644 text6 CODE >140:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+64A text6 CODE >141:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+64E text6 CODE >143:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+656 text6 CODE >144:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+65A text6 CODE >146:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+662 text6 CODE >147:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+666 text6 CODE >149:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+66E text6 CODE >150:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+672 text6 CODE >151:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+674 text6 CODE >152:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+676 text6 CODE >156:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+67E text6 CODE >157:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+684 text6 CODE >158:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+688 text6 CODE >160:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+690 text6 CODE >161:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+694 text6 CODE >163:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+69C text6 CODE >164:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6A0 text6 CODE >166:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6A8 text6 CODE >167:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6AC text6 CODE >168:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6AE text6 CODE >169:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6B0 text6 CODE >172:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6B8 text6 CODE >173:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6BE text6 CODE >174:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6C2 text6 CODE >175:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6C6 text6 CODE >177:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6CE text6 CODE >178:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6D4 text6 CODE >179:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6D8 text6 CODE >180:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6DA text6 CODE >181:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6DC text6 CODE >183:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6E0 text6 CODE >185:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6E8 text6 CODE >186:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+6EC text6 CODE >191:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E4E text5 CODE >68:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E50 text5 CODE >70:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E56 text5 CODE >71:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E58 text5 CODE >72:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E5A text5 CODE >73:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E5C text5 CODE >74:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E5E text5 CODE >76:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E66 text5 CODE >77:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E68 text5 CODE >78:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E6A text5 CODE >79:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E6C text5 CODE >80:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E6E text5 CODE >82:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E76 text5 CODE >83:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E78 text5 CODE >84:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E7A text5 CODE >85:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E7C text5 CODE >86:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E7E text5 CODE >88:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E86 text5 CODE >89:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E88 text5 CODE >90:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E8A text5 CODE >91:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E8C text5 CODE >92:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+E8E text5 CODE >95:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+10B8 text4 CODE >228:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+10B8 text4 CODE >229:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+10C4 text4 CODE >230:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+10C8 text4 CODE >232:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+7C8 text3 CODE >197:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+7C8 text3 CODE >198:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+7E6 text3 CODE >200:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+7F8 text3 CODE >201:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+802 text3 CODE >205:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+814 text3 CODE >206:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+816 text3 CODE >207:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+81A text3 CODE >210:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+83C text3 CODE >211:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+840 text3 CODE >213:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+848 text3 CODE >214:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+84C text3 CODE >215:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+84E text3 CODE >216:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+852 text3 CODE >217:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+856 text3 CODE >218:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+858 text3 CODE >219:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+85E text3 CODE >220:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+880 text3 CODE >223:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+884 text3 CODE >224:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+260 text2 CODE >234:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+260 text2 CODE >235:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+262 text2 CODE >237:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+266 text2 CODE >238:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+26C text2 CODE >239:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+270 text2 CODE >240:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+276 text2 CODE >241:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+27C text2 CODE >242:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+280 text2 CODE >243:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+284 text2 CODE >244:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+28C text2 CODE >248:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+290 text2 CODE >249:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+296 text2 CODE >250:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+29A text2 CODE >251:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2A0 text2 CODE >252:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2A6 text2 CODE >253:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2AA text2 CODE >254:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2AE text2 CODE >255:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2B6 text2 CODE >260:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2BA text2 CODE >261:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2C0 text2 CODE >262:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2C4 text2 CODE >263:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2CA text2 CODE >264:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2D0 text2 CODE >265:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2D4 text2 CODE >266:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2D8 text2 CODE >267:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2E0 text2 CODE >272:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2E4 text2 CODE >273:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2EA text2 CODE >274:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2EE text2 CODE >275:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2F4 text2 CODE >276:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2FA text2 CODE >277:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+2FE text2 CODE >278:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+302 text2 CODE >279:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+30A text2 CODE >284:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+30E text2 CODE >285:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+32C text2 CODE >286:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+33E text2 CODE >287:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+344 text2 CODE >288:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+348 text2 CODE >289:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+366 text2 CODE >291:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+368 text2 CODE >292:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+36E text2 CODE >298:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+372 text2 CODE >299:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+378 text2 CODE >300:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+37A text2 CODE >304:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+38C text2 CODE >305:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+390 text2 CODE >308:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+394 text2 CODE >309:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+398 text2 CODE >310:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+39A text2 CODE >313:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3B4 text2 CODE >314:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3DC text2 CODE >316:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3DE text2 CODE >317:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3E2 text2 CODE >318:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3E6 text2 CODE >320:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3EC text2 CODE >321:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3F0 text2 CODE >322:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3F4 text2 CODE >324:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3F8 text2 CODE >325:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+3FC text2 CODE >326:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+402 text2 CODE >327:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+406 text2 CODE >328:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+40A text2 CODE >329:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+410 text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+41A text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+422 text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+428 text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+42E text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+434 text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+43A text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+440 text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+446 text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+44C text2 CODE >334:C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+104C text1 CODE >11:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+104C text1 CODE >12:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+1050 text1 CODE >13:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+1054 text1 CODE >15:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+1056 text1 CODE >16:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+1058 text1 CODE >18:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+105C text1 CODE >19:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+1060 text1 CODE >20:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+1062 text1 CODE >21:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+1066 text1 CODE >22:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+106A text1 CODE >24:C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+E08 text0 CODE >57:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E08 text0 CODE >59:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E0C text0 CODE >60:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E10 text0 CODE >61:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E14 text0 CODE >62:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E1E text0 CODE >63:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E22 text0 CODE >64:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E2C text0 CODE >65:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E30 text0 CODE >66:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E34 text0 CODE >67:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E38 text0 CODE >68:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E3C text0 CODE >69:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E40 text0 CODE >73:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E44 text0 CODE >74:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+E48 text0 CODE >75:C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+CBC cinit CODE >3957:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CBC cinit CODE >3959:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CBC cinit CODE >3962:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CBC cinit CODE >4395:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CBE cinit CODE >4396:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CC0 cinit CODE >4397:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CC2 cinit CODE >4398:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CC4 cinit CODE >4399:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CC6 cinit CODE >4400:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CC8 cinit CODE >4401:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CCC cinit CODE >4402:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CD0 cinit CODE >4403:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CD0 cinit CODE >4404:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CD2 cinit CODE >4405:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CD6 cinit CODE >4406:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CD8 cinit CODE >4407:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CDA cinit CODE >4408:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CDC cinit CODE >4412:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CDE cinit CODE >4413:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CE0 cinit CODE >4414:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CE2 cinit CODE >4415:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CE4 cinit CODE >4416:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CE6 cinit CODE >4417:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CE8 cinit CODE >4418:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CEA cinit CODE >4419:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CEE cinit CODE >4420:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CF0 cinit CODE >4421:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CF4 cinit CODE >4425:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CF8 cinit CODE >4426:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CFA cinit CODE >4427:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CFA cinit CODE >4428:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CFC cinit CODE >4429:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+CFE cinit CODE >4430:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D00 cinit CODE >4433:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D04 cinit CODE >4434:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D06 cinit CODE >4435:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D06 cinit CODE >4436:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D08 cinit CODE >4437:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D0A cinit CODE >4438:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D0C cinit CODE >4444:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D0C cinit CODE >4446:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D0E cinit CODE >4447:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D10 cinit CODE >4449:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D12 cinit CODE >4450:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D14 cinit CODE >4451:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+D16 cinit CODE >4452:C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_j 9 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_n F5 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_p 37 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_fila_matriu_menu 44 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\P2B_2.X.production.o
+_tower_name C6 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\P2B_2.X.production.o
+__Hspace_0 110A 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Hspace_1 1BA 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_columna_polsada 2A 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_matriu_teclat 178 0 BANK1 1 dataBANK1 dist/default/production\P2B_2.X.production.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\P2B_2.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\P2B_2.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\P2B_2.X.production.o
+_caracters_escrits 27 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_CantaPartBaixa BEC 0 CODE 0 text30 dist/default/production\P2B_2.X.production.o
+_p1 F1 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\P2B_2.X.production.o
+__end_of_LcInit 7C8 0 CODE 0 text24 dist/default/production\P2B_2.X.production.o
+_timer_tics CA 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_estat_ct 1E 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lsmallconst 200 0 SMALLCONST 0 smallconst dist/default/production\P2B_2.X.production.o
+_Rows 58 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_TMR0 FD6 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_Tics 5 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_flag 1F 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_main E08 0 CODE 0 text0 dist/default/production\P2B_2.X.production.o
+_nota 13 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_rows 2D 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+btemp 7F 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+__end_of_TI_GetTics E08 0 CODE 0 text27 dist/default/production\P2B_2.X.production.o
+start 12 0 CODE 0 init C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_comprovaHiHaColumna FAA 0 CODE 0 text7 dist/default/production\P2B_2.X.production.o
+__end_of_InitAltaveu 1028 0 CODE 0 text33 dist/default/production\P2B_2.X.production.o
+__end_of_Menu_Init F46 0 CODE 0 text23 dist/default/production\P2B_2.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_iterador_towername 50 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_fila_play_recording 53 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_dest_port D2 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+LcInit@i 79 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\P2B_2.X.production.o
+Espera@ms 6E 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+TI_Init@counter 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+TI_NewTimer@Comptador 64 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__Hpowerup 12 0 CODE 0 powerup dist/default/production\P2B_2.X.production.o
+_TI_Init FD6 0 CODE 0 text22 dist/default/production\P2B_2.X.production.o
+_TI_NewTimer E90 0 CODE 0 text35 dist/default/production\P2B_2.X.production.o
+ttemp5 80 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+ttemp6 83 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+ttemp7 87 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\P2B_2.X.production.o
+_Menu_Init F0A 0 CODE 0 text23 dist/default/production\P2B_2.X.production.o
+_posicio_grabacio 4F 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_flag_modifyCurrentTime 4A 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\P2B_2.X.production.o
+wtemp8 80 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+_tecla_premuda F 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+Espera@Timer 76 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_CantaPartBaixa C54 0 CODE 0 text30 dist/default/production\P2B_2.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\P2B_2.X.production.o
+_TimerNotaTotal 11 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_tower_name_menu0 34 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_tower_name_menu1 33 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_tower_name_menu2 32 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\P2B_2.X.production.o
+TI_NewTimer@TimerHandle 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__pidataCOMRAM 1108 0 CODE 0 idataCOMRAM dist/default/production\P2B_2.X.production.o
+TI_GetTics@CopiaTicsActual 6A 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_segons0_menu 18 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_segons1_menu 17 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_caracters_escrits_menu 2F 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_RSI_Timer0 10A0 0 CODE 0 text38 dist/default/production\P2B_2.X.production.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\P2B_2.X.production.o
+_ColumnAct 55 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_EECON1bits FA6 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_gravacio_reprduir_id E9 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\P2B_2.X.production.o
+_CantaIR F78 0 CODE 0 text29 dist/default/production\P2B_2.X.production.o
+_EECON2 FA7 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_EEDATA FA8 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_arrModifyCurrentTimeMinuts E3 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\P2B_2.X.production.o
+__end_of_EscriuPrimeraOrdre BEC 0 CODE 0 text28 dist/default/production\P2B_2.X.production.o
+_motorJoy AF4 0 CODE 0 text18 dist/default/production\P2B_2.X.production.o
+_eeprom_overflow EB 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_BAUDCONbits FB8 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_Espera D1A 0 CODE 0 text26 dist/default/production\P2B_2.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\P2B_2.X.production.o
+_ADC_Init 10CA 0 CODE 0 text36 dist/default/production\P2B_2.X.production.o
+__Hintcodelo 12 0 CODE 0 intcodelo dist/default/production\P2B_2.X.production.o
+_eeprom_adress_temp EE 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__end_of_motorJoy B72 0 CODE 0 text18 dist/default/production\P2B_2.X.production.o
+__end_of_comprovaHiHaColumna FD6 0 CODE 0 text7 dist/default/production\P2B_2.X.production.o
+getTowerName@p 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_flag_putstring_current 14 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_getEspera 1104 0 CODE 0 text11 dist/default/production\P2B_2.X.production.o
+__end_of_ADC_Init 10DA 0 CODE 0 text36 dist/default/production\P2B_2.X.production.o
+_old_fila_matriu 25 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_estat_tad_recording C 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_TimerMarquesina 5F 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_arrModifyCurrentTimeSegons E1 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_writeCaracter 7C8 0 CODE 0 text3 dist/default/production\P2B_2.X.production.o
+_flag_preemenu 31 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_WaitForBusy D72 0 CODE 0 text25 dist/default/production\P2B_2.X.production.o
+_eeprom_data F2 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_eeprom_read ED 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+TI_ResetTics@TimerHandle 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_joy_direction 23 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\P2B_2.X.production.o
+_iteracio_char 36 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_LcInit 6EE 0 CODE 0 text24 dist/default/production\P2B_2.X.production.o
+TI_GetTics@TimerHandle 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+EscriuPrimeraOrdre@ordre 63 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__Lintcodelo 12 0 CODE 0 intcodelo dist/default/production\P2B_2.X.production.o
+_EscriuPrimeraOrdre B72 0 CODE 0 text28 dist/default/production\P2B_2.X.production.o
+start_initialization CBC 0 CODE 0 cinit dist/default/production\P2B_2.X.production.o
+__end_of_InitconfOsc 10FC 0 CODE 0 text32 dist/default/production\P2B_2.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\P2B_2.X.production.o
+_getEspera 1100 0 CODE 0 text11 dist/default/production\P2B_2.X.production.o
+_TRISAbits F92 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_TRISBbits F93 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_TRISEbits F96 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__end_of_RSI_Timer0 10B8 0 CODE 0 text38 dist/default/production\P2B_2.X.production.o
+_tower_name_menu D6 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+LcGotoXY@Row 6F 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_getCaractersEscrits 1104 0 CODE 0 text12 dist/default/production\P2B_2.X.production.o
+_motorTeclat 260 0 CODE 0 text2 dist/default/production\P2B_2.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_waitTeclaTreta 10B8 0 CODE 0 text4 dist/default/production\P2B_2.X.production.o
+_Columns 57 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_mostres_micro E5 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_RowAct 56 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_SPBRGH FB0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__end_of_sioInit 106C 0 CODE 0 text1 dist/default/production\P2B_2.X.production.o
+_TMR0IF 7F92 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_total_temps 4B 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_Timers 80 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_timer_start_recording 3E 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_eeprom_adress F6 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+?_TI_GetTics 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_Timer1S 5C 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\P2B_2.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\P2B_2.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\P2B_2.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\P2B_2.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\P2B_2.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\P2B_2.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\P2B_2.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\P2B_2.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\P2B_2.X.production.o
+_joystick_direction 42 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\P2B_2.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\P2B_2.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\P2B_2.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\P2B_2.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\P2B_2.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\P2B_2.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\P2B_2.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\P2B_2.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\P2B_2.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\P2B_2.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\P2B_2.X.production.o
+_getTowerName 10DA 0 CODE 0 text10 dist/default/production\P2B_2.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\P2B_2.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\P2B_2.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\P2B_2.X.production.o
+__smallconst 200 0 SMALLCONST 0 smallconst C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_flag_CurrentTime_menu 3A 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\P2B_2.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\P2B_2.X.production.o
+_index0_playrec E8 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_index_gravacions F4 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\P2B_2.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\P2B_2.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\P2B_2.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\P2B_2.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\P2B_2.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\P2B_2.X.production.o
+_time_recording 3D 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\P2B_2.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\P2B_2.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\P2B_2.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\P2B_2.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\P2B_2.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\P2B_2.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\P2B_2.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\P2B_2.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\P2B_2.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\P2B_2.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\P2B_2.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\P2B_2.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\P2B_2.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\P2B_2.X.production.o
+MyPutString@frase 78 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\P2B_2.X.production.o
+LcInit@rows 78 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\P2B_2.X.production.o
+_PORTCbits F82 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_PORTEbits F84 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__end_of_waitTeclaTreta 10CA 0 CODE 0 text4 dist/default/production\P2B_2.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\P2B_2.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\P2B_2.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\P2B_2.X.production.o
+__Hinit 16 0 CODE 0 init dist/default/production\P2B_2.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\P2B_2.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\P2B_2.X.production.o
+__Htemp 80 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\P2B_2.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\P2B_2.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\P2B_2.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\P2B_2.X.production.o
+__Linit 12 0 CODE 0 init dist/default/production\P2B_2.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\P2B_2.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\P2B_2.X.production.o
+__Ltemp 7F 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\P2B_2.X.production.o
+LcGotoXY@Column 76 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_flag_end_playing E7 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+int$flags 7F 0 COMRAM 1 temp dist/default/production\P2B_2.X.production.o
+_posicio_caracter 35 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_CurrentTimeComplet 4C 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\P2B_2.X.production.o
+_time_recording_minuts 3C 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\P2B_2.X.production.o
+__S0 110A 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__S1 1BA 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_minuts0_menu 16 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_flag_CurrentTime 19 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+LcGotoXY@Fisics 74 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_minuts1_menu 15 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_flag_tad_sio 39 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_TI_NewTimer ECE 0 CODE 0 text35 dist/default/production\P2B_2.X.production.o
+_TimerCurrentTime F7 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_user_name DA 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_TI_ResetTics 1028 0 CODE 0 text34 dist/default/production\P2B_2.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\P2B_2.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\P2B_2.X.production.o
+_eedata 51 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\P2B_2.X.production.o
+_espera 28 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_time_recording_segons 3B 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_getCaractersEscrits 1108 0 CODE 0 text12 dist/default/production\P2B_2.X.production.o
+_digit_minuts_0 1B 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_digit_minuts_1 1A 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_flag_index F0 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_initEEPROM 10E8 0 CODE 0 text21 dist/default/production\P2B_2.X.production.o
+_fila_matriu 26 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\P2B_2.X.production.o
+__end_of_writeCaracter 886 0 CODE 0 text3 dist/default/production\P2B_2.X.production.o
+__Hramtop 200 0 RAM 0 ramtop dist/default/production\P2B_2.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\P2B_2.X.production.o
+__end_of_LcClear 1086 0 CODE 0 text17 dist/default/production\P2B_2.X.production.o
+_valor_ADRESH 22 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__pdataBANK1 100 0 BANK1 1 dataBANK1 dist/default/production\P2B_2.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\P2B_2.X.production.o
+__end_of_getTowerName 10E8 0 CODE 0 text10 dist/default/production\P2B_2.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\P2B_2.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\P2B_2.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\P2B_2.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\P2B_2.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\P2B_2.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\P2B_2.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\P2B_2.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\P2B_2.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\P2B_2.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\P2B_2.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\P2B_2.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\P2B_2.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\P2B_2.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\P2B_2.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\P2B_2.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\P2B_2.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\P2B_2.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\P2B_2.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\P2B_2.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\P2B_2.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\P2B_2.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\P2B_2.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\P2B_2.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\P2B_2.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\P2B_2.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\P2B_2.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\P2B_2.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\P2B_2.X.production.o
+_MyPutString 9EA 0 CODE 0 text13 dist/default/production\P2B_2.X.production.o
+_estat_joy 24 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_estat_sio 21 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_valor_micro_ADRESH B 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_initMicro 10A0 0 CODE 0 text20 dist/default/production\P2B_2.X.production.o
+_flag_startmenu 40 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__ptext10 10DA 0 CODE 0 text10 dist/default/production\P2B_2.X.production.o
+__ptext11 1100 0 CODE 0 text11 dist/default/production\P2B_2.X.production.o
+__ptext12 1104 0 CODE 0 text12 dist/default/production\P2B_2.X.production.o
+__ptext13 9EA 0 CODE 0 text13 dist/default/production\P2B_2.X.production.o
+__ptext14 A76 0 CODE 0 text14 dist/default/production\P2B_2.X.production.o
+__ptext15 940 0 CODE 0 text15 dist/default/production\P2B_2.X.production.o
+__ptext16 F46 0 CODE 0 text16 dist/default/production\P2B_2.X.production.o
+__ptext17 106C 0 CODE 0 text17 dist/default/production\P2B_2.X.production.o
+__ptext18 AF4 0 CODE 0 text18 dist/default/production\P2B_2.X.production.o
+__ptext19 ECE 0 CODE 0 text19 dist/default/production\P2B_2.X.production.o
+__ptext20 1086 0 CODE 0 text20 dist/default/production\P2B_2.X.production.o
+__ptext21 10E8 0 CODE 0 text21 dist/default/production\P2B_2.X.production.o
+__ptext22 FD6 0 CODE 0 text22 dist/default/production\P2B_2.X.production.o
+__ptext23 F0A 0 CODE 0 text23 dist/default/production\P2B_2.X.production.o
+__ptext24 6EE 0 CODE 0 text24 dist/default/production\P2B_2.X.production.o
+__ptext25 D72 0 CODE 0 text25 dist/default/production\P2B_2.X.production.o
+__ptext26 D1A 0 CODE 0 text26 dist/default/production\P2B_2.X.production.o
+__ptext27 DBE 0 CODE 0 text27 dist/default/production\P2B_2.X.production.o
+__ptext28 B72 0 CODE 0 text28 dist/default/production\P2B_2.X.production.o
+__ptext29 F78 0 CODE 0 text29 dist/default/production\P2B_2.X.production.o
+__ptext30 BEC 0 CODE 0 text30 dist/default/production\P2B_2.X.production.o
+__ptext31 C54 0 CODE 0 text31 dist/default/production\P2B_2.X.production.o
+__ptext32 10F2 0 CODE 0 text32 dist/default/production\P2B_2.X.production.o
+__ptext33 1002 0 CODE 0 text33 dist/default/production\P2B_2.X.production.o
+__ptext34 1028 0 CODE 0 text34 dist/default/production\P2B_2.X.production.o
+__ptext35 E90 0 CODE 0 text35 dist/default/production\P2B_2.X.production.o
+__ptext36 10CA 0 CODE 0 text36 dist/default/production\P2B_2.X.production.o
+__ptext38 10A0 0 CODE 0 text38 dist/default/production\P2B_2.X.production.o
+__end_of_motorMenu 5F4 0 CODE 0 text9 dist/default/production\P2B_2.X.production.o
+_hi_ha_tecla 2B 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\P2B_2.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\P2B_2.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\P2B_2.X.production.o
+_temps_5s D 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_temps_8s 4D 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_tower_name_position 45 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\P2B_2.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\P2B_2.X.production.o
+_filamatriu_menu 49 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_estat_menu 47 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_estat_play EA 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_estat_eeprom F3 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_LATBbits F8A 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_LATCbits F8B 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_LATEbits F8D 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_initMicro 1086 0 CODE 0 text20 dist/default/production\P2B_2.X.production.o
+_flagAltaveu_teclat 30 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\P2B_2.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\P2B_2.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_my_interrupts 8 0 CODE 0 intcode dist/default/production\P2B_2.X.production.o
+CantaPartBaixa@c 63 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_InitAltaveu 1002 0 CODE 0 text33 dist/default/production\P2B_2.X.production.o
+_motorMenu 454 0 CODE 0 text9 dist/default/production\P2B_2.X.production.o
+__end_of_Getflag_TTeclat 1100 0 CODE 0 text8 dist/default/production\P2B_2.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_rec_port CE 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\P2B_2.X.production.o
+__end_of_initEEPROM 10F2 0 CODE 0 text21 dist/default/production\P2B_2.X.production.o
+__end_of_TI_ResetTics 104C 0 CODE 0 text34 dist/default/production\P2B_2.X.production.o
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\P2B_2.X.production.o
+__end_of_WaitForBusy DBE 0 CODE 0 text25 dist/default/production\P2B_2.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\P2B_2.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_initTeclat ECE 0 CODE 0 text19 dist/default/production\P2B_2.X.production.o
+_CantaPartAlta C54 0 CODE 0 text31 dist/default/production\P2B_2.X.production.o
+_hi_ha_tecla_menu 48 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+CantaIR@IR 64 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+CantaPartAlta@c 63 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_tiempo_nota_total E 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_sioInit 104C 0 CODE 0 text1 dist/default/production\P2B_2.X.production.o
+end_of_initialization D0C 0 CODE 0 cinit dist/default/production\P2B_2.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\P2B_2.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\P2B_2.X.production.o
+__end_of_motorTeclat 454 0 CODE 0 text2 dist/default/production\P2B_2.X.production.o
+WaitForBusy@Busy 6E 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_TI_Init 1002 0 CODE 0 text22 dist/default/production\P2B_2.X.production.o
+_TimerMelody 5A 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_setFiles E4E 0 CODE 0 text5 dist/default/production\P2B_2.X.production.o
+__end_of_LcPutChar AF4 0 CODE 0 text14 dist/default/production\P2B_2.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\P2B_2.X.production.o
+_LcGotoXY 940 0 CODE 0 text15 dist/default/production\P2B_2.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\P2B_2.X.production.o
+_joystick_down_counter 52 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_total_gravacions EF 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Lramtop 200 0 RAM 0 ramtop dist/default/production\P2B_2.X.production.o
+_posicio_ensenyar_eeprom 4E 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\P2B_2.X.production.o
+_flag_TTeclat 7D 0 COMRAM 1 dataCOMRAM dist/default/production\P2B_2.X.production.o
+_estat_string 54 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__pcinit CBC 0 CODE 0 cinit dist/default/production\P2B_2.X.production.o
+_estat_teclat 2E 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__ptext0 E08 0 CODE 0 text0 dist/default/production\P2B_2.X.production.o
+__ptext1 104C 0 CODE 0 text1 dist/default/production\P2B_2.X.production.o
+__ptext2 260 0 CODE 0 text2 dist/default/production\P2B_2.X.production.o
+__ptext3 7C8 0 CODE 0 text3 dist/default/production\P2B_2.X.production.o
+__ptext4 10B8 0 CODE 0 text4 dist/default/production\P2B_2.X.production.o
+__ptext5 E4E 0 CODE 0 text5 dist/default/production\P2B_2.X.production.o
+__ptext6 5F4 0 CODE 0 text6 dist/default/production\P2B_2.X.production.o
+__ptext7 FAA 0 CODE 0 text7 dist/default/production\P2B_2.X.production.o
+__ptext8 10FC 0 CODE 0 text8 dist/default/production\P2B_2.X.production.o
+__ptext9 454 0 CODE 0 text9 dist/default/production\P2B_2.X.production.o
+_TimerRecording 60 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_setFiles E90 0 CODE 0 text5 dist/default/production\P2B_2.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\P2B_2.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\P2B_2.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\P2B_2.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\P2B_2.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\P2B_2.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\P2B_2.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\P2B_2.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\P2B_2.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\P2B_2.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\P2B_2.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\P2B_2.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\P2B_2.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\P2B_2.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\P2B_2.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\P2B_2.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\P2B_2.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\P2B_2.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\P2B_2.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\P2B_2.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\P2B_2.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\P2B_2.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\P2B_2.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\P2B_2.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\P2B_2.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\P2B_2.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\P2B_2.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\P2B_2.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\P2B_2.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\P2B_2.X.production.o
+_TimerTiempoNota 5B 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_LcGotoXY 9EA 0 CODE 0 text15 dist/default/production\P2B_2.X.production.o
+_Getflag_TTeclat 10FC 0 CODE 0 text8 dist/default/production\P2B_2.X.production.o
+_TimerRecordingADC 59 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__ramtop 200 0 RAM 0 ramtop C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_TimerRebots 5D 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lpowerup 12 0 CODE 0 powerup dist/default/production\P2B_2.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\P2B_2.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\P2B_2.X.production.o
+_caracter_actual 29 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_LcPutChar A76 0 CODE 0 text14 dist/default/production\P2B_2.X.production.o
+__psmallconst 200 0 SMALLCONST 0 smallconst dist/default/production\P2B_2.X.production.o
+setFiles@rows 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_digit_segons_0 1D 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_digit_segons_1 1C 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\P2B_2.X.production.o
+__end_of_CantaData F78 0 CODE 0 text16 dist/default/production\P2B_2.X.production.o
+_timer_2s 5E 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_initTeclat F0A 0 CODE 0 text19 dist/default/production\P2B_2.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\nurco\AppData\Local\Temp\xcAshhs.\driver_tmp_9.o
+_temps_grabacio DF 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__end_of_array_notas@TALTAVEU$F1257 219 0 SMALLCONST 0 smallconst dist/default/production\P2B_2.X.production.o
+__end_of_array_notas@TALTAVEU$F1459 20D 0 SMALLCONST 0 smallconst dist/default/production\P2B_2.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\P2B_2.X.production.o
+__end_of__initialization D0C 0 CODE 0 cinit dist/default/production\P2B_2.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\P2B_2.X.production.o
+__pidataBANK1 886 0 CODE 0 idataBANK1 dist/default/production\P2B_2.X.production.o
+__end_of_CantaIR FAA 0 CODE 0 text29 dist/default/production\P2B_2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\P2B_2.X.production.o
+_tiempo_nota 10 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+CantaData@Data 64 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_timer_tics_1s 1 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_LcGotoXY$395 72 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_array_notas@TALTAVEU$F537 225 0 SMALLCONST 0 smallconst dist/default/production\P2B_2.X.production.o
+_CantaData F46 0 CODE 0 text16 dist/default/production\P2B_2.X.production.o
+_fase_escombrat 2C 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_flag_show_current_time 41 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__pcstackCOMRAM 62 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+_flag_putstring 43 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+_index_data EC 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_flag_startmenu_sio 20 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_main E4E 0 CODE 0 text0 dist/default/production\P2B_2.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\P2B_2.X.production.o
+LcInit@columns 77 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_array_notas 231 0 SMALLCONST 0 smallconst dist/default/production\P2B_2.X.production.o
+_EEADR FA9 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_current_tics_x C2 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_RCSTA FAB 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_InitconfOsc 10F2 0 CODE 0 text32 dist/default/production\P2B_2.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_TXSTA FAC 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+_Timer 61 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\P2B_2.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\P2B_2.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\P2B_2.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\P2B_2.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\P2B_2.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\P2B_2.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\P2B_2.X.production.o
+_flag_menu 46 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_saveTecla 6EE 0 CODE 0 text6 dist/default/production\P2B_2.X.production.o
+_index AD 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_TI_GetTics DBE 0 CODE 0 text27 dist/default/production\P2B_2.X.production.o
+_flag_TTeclat_menu 7E 0 COMRAM 1 dataCOMRAM dist/default/production\P2B_2.X.production.o
+_LcClear 106C 0 CODE 0 text17 dist/default/production\P2B_2.X.production.o
+__end_of_my_interrupts 12 0 CODE 0 intcode dist/default/production\P2B_2.X.production.o
+_estat_altaveu 12 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\P2B_2.X.production.o
+_flag_towername 3F 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__initialization CBC 0 CODE 0 cinit dist/default/production\P2B_2.X.production.o
+_current_time_recording BD 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+_marquesina_text 100 0 BANK1 1 dataBANK1 dist/default/production\P2B_2.X.production.o
+__pbssBANK0 80 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__pdataCOMRAM 7D 0 COMRAM 1 dataCOMRAM dist/default/production\P2B_2.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\P2B_2.X.production.o
+__Hsmallconst 260 0 SMALLCONST 0 smallconst dist/default/production\P2B_2.X.production.o
+LcPutChar@c 77 0 COMRAM 1 cstackCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_CantaPartAlta CBC 0 CODE 0 text31 dist/default/production\P2B_2.X.production.o
+_mostres DD 0 BANK0 1 bssBANK0 dist/default/production\P2B_2.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\P2B_2.X.production.o
+__end_of_MyPutString A76 0 CODE 0 text13 dist/default/production\P2B_2.X.production.o
+_saveTecla 5F4 0 CODE 0 text6 dist/default/production\P2B_2.X.production.o
+_pos_marq 38 0 COMRAM 1 bssCOMRAM dist/default/production\P2B_2.X.production.o
+__end_of_Espera D72 0 CODE 0 text26 dist/default/production\P2B_2.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\P2B_2.X.production.o
+__Hintcode 12 0 CODE 0 intcode dist/default/production\P2B_2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text2 0 260 260 EAA 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 80 80 7B 1
+intcode 0 8 8 E 1
+smallconst 0 200 200 60 1
+dataBANK1 1 100 100 BA 1
+bssCOMRAM 1 1 1 7F 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

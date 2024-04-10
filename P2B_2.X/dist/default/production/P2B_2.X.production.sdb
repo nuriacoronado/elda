@@ -1,0 +1,854 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4321 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"25 C:\Users\nurco\MPLABXProjects\P2B_2.X\CURRENT_TIME.c
+[v _getSegons0 getSegons0 `(uc  1 e 1 0 ]
+"28
+[v _getSegons1 getSegons1 `(uc  1 e 1 0 ]
+"31
+[v _getMinuts0 getMinuts0 `(uc  1 e 1 0 ]
+"34
+[v _getMinuts1 getMinuts1 `(uc  1 e 1 0 ]
+"68 C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+[v _LcInit LcInit `(v  1 e 1 0 ]
+"114
+[v _LcClear LcClear `(v  1 e 1 0 ]
+"135
+[v _LcGotoXY LcGotoXY `(v  1 e 1 0 ]
+"162
+[v _LcPutChar LcPutChar `(v  1 e 1 0 ]
+"206
+[v _MyPutString MyPutString `(uc  1 e 1 0 ]
+"244
+[v _Espera Espera `(v  1 e 1 0 ]
+"249
+[v _CantaPartAlta CantaPartAlta `(v  1 e 1 0 ]
+"256
+[v _CantaPartBaixa CantaPartBaixa `(v  1 e 1 0 ]
+"263
+[v _CantaIR CantaIR `(v  1 e 1 0 ]
+"279
+[v _CantaData CantaData `(v  1 e 1 0 ]
+"295
+[v _WaitForBusy WaitForBusy `(v  1 e 1 0 ]
+"313
+[v _EscriuPrimeraOrdre EscriuPrimeraOrdre `(v  1 e 1 0 ]
+"23 C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+[v _my_interrupts my_interrupts `IIH(v  1 e 1 0 ]
+"28
+[v _InitconfOsc InitconfOsc `(v  1 e 1 0 ]
+"57
+[v _main main `(v  1 e 1 0 ]
+"11 C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+[v _sioInit sioInit `(v  1 e 1 0 ]
+"26
+[v _waitForSend waitForSend `(uc  1 e 1 0 ]
+"33
+[v _sendChar sendChar `(v  1 e 1 0 ]
+"36
+[v _checkIfRecieved checkIfRecieved `(uc  1 e 1 0 ]
+"43
+[v _compareCharRecieved compareCharRecieved `(uc  1 e 1 0 ]
+"19 C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+[v _InitAltaveu InitAltaveu `(v  1 e 1 0 ]
+"19 C:\Users\nurco\MPLABXProjects\P2B_2.X\TEEPROM.c
+[v _startEEPROMWrite startEEPROMWrite `(v  1 e 1 0 ]
+"22
+[v _getTotalGravacions getTotalGravacions `(uc  1 e 1 0 ]
+"28
+[v _initEEPROM initEEPROM `(v  1 e 1 0 ]
+"36
+[v _configWriteEEPROM configWriteEEPROM `(v  1 e 1 0 ]
+"43
+[v _waitWriteEEPROM waitWriteEEPROM `(uc  1 e 1 0 ]
+"52
+[v _ReadEEPROM ReadEEPROM `(uc  1 e 1 0 ]
+"13 C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"19
+[v _getJoyDirection getJoyDirection `(uc  1 e 1 0 ]
+"22
+[v _motorJoy motorJoy `(v  1 e 1 0 ]
+"83 C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+[v _augmentaPosCaracter augmentaPosCaracter `(v  1 e 1 0 ]
+"115
+[v _augmentaPosMarq augmentaPosMarq `(v  1 e 1 0 ]
+"121
+[v _Menu_Init Menu_Init `(v  1 e 1 0 ]
+"137
+[v _getJoystickDownCounter getJoystickDownCounter `(uc  1 e 1 0 ]
+"140
+[v _getCurrentTime getCurrentTime `(uc  1 e 1 0 ]
+"144
+[v _Getflag_TTeclat Getflag_TTeclat `(uc  1 e 1 0 ]
+"157
+[v _motorMenu motorMenu `(v  1 e 1 0 ]
+"25 C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+[v _initMicro initMicro `(v  1 e 1 0 ]
+"30
+[v _getIndex getIndex `(uc  1 e 1 0 ]
+"42
+[v _getTimeStampChar getTimeStampChar `(uc  1 e 1 0 ]
+"41 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+[v _initTeclat initTeclat `(v  1 e 1 0 ]
+"55
+[v _getHiHatecla getHiHatecla `(uc  1 e 1 0 ]
+"58
+[v _getTowerName getTowerName `(uc  1 e 1 0 ]
+"61
+[v _getCaractersEscrits getCaractersEscrits `(uc  1 e 1 0 ]
+"65
+[v _getEspera getEspera `(uc  1 e 1 0 ]
+"68
+[v _setFiles setFiles `(v  1 e 1 0 ]
+"97
+[v _comprovaHiHaColumna comprovaHiHaColumna `(uc  1 e 1 0 ]
+"115
+[v _saveTecla saveTecla `(v  1 e 1 0 ]
+"193
+[v _getFilamatriu getFilamatriu `(uc  1 e 1 0 ]
+"197
+[v _writeCaracter writeCaracter `(v  1 e 1 0 ]
+"228
+[v _waitTeclaTreta waitTeclaTreta `(v  1 e 1 0 ]
+"234
+[v _motorTeclat motorTeclat `(v  1 e 1 0 ]
+"25 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+[v _RSI_Timer0 RSI_Timer0 `(v  1 e 1 0 ]
+"36
+[v _TI_Init TI_Init `(v  1 e 1 0 ]
+"47
+[v _TI_NewTimer TI_NewTimer `(uc  1 e 1 0 ]
+"57
+[v _TI_ResetTics TI_ResetTics `(v  1 e 1 0 ]
+"62
+[v _TI_GetTics TI_GetTics `(ul  1 e 4 0 ]
+"67
+[v _TI_CloseTimer TI_CloseTimer `(v  1 e 1 0 ]
+[s S617 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"508 C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic18f4321.h
+[s S727 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S736 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S745 . 1 `uc 1 T1CKI 1 0 :1:0 
+]
+[s S747 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S751 . 1 `S617 1 . 1 0 `S727 1 . 1 0 `S736 1 . 1 0 `S745 1 . 1 0 `S747 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES751  1 e 1 @3970 ]
+[s S251 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"843
+[s S279 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 MCLR 1 0 :1:3 
+]
+[s S284 . 1 `uc 1 NOT_RD 1 0 :1:0 
+]
+[s S286 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_WR 1 0 :1:1 
+]
+[s S289 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_CS 1 0 :1:2 
+]
+[s S292 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_MCLR 1 0 :1:3 
+]
+[s S295 . 1 `uc 1 nRD 1 0 :1:0 
+`uc 1 nWR 1 0 :1:1 
+`uc 1 nCS 1 0 :1:2 
+`uc 1 nMCLR 1 0 :1:3 
+]
+[s S300 . 1 `uc 1 AN5 1 0 :1:0 
+`uc 1 AN6 1 0 :1:1 
+`uc 1 AN7 1 0 :1:2 
+`uc 1 VPP 1 0 :1:3 
+]
+[s S305 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+]
+[s S310 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 PB2 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+]
+[u S315 . 1 `S251 1 . 1 0 `S279 1 . 1 0 `S284 1 . 1 0 `S286 1 . 1 0 `S289 1 . 1 0 `S292 1 . 1 0 `S295 1 . 1 0 `S300 1 . 1 0 `S305 1 . 1 0 `S310 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES315  1 e 1 @3972 ]
+[s S202 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"1127
+[s S211 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S220 . 1 `S202 1 . 1 0 `S211 1 . 1 0 ]
+[v _LATBbits LATBbits `VES220  1 e 1 @3978 ]
+[s S666 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1239
+[s S675 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S684 . 1 `S666 1 . 1 0 `S675 1 . 1 0 ]
+[v _LATCbits LATCbits `VES684  1 e 1 @3979 ]
+[s S182 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"1453
+[s S186 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S190 . 1 `S182 1 . 1 0 `S186 1 . 1 0 ]
+[v _LATEbits LATEbits `VES190  1 e 1 @3981 ]
+[s S861 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1520
+[s S870 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S879 . 1 `S861 1 . 1 0 `S870 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES879  1 e 1 @3986 ]
+[s S114 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1742
+[s S123 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S132 . 1 `S114 1 . 1 0 `S123 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES132  1 e 1 @3987 ]
+[s S608 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1964
+[u S626 . 1 `S608 1 . 1 0 `S617 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES626  1 e 1 @3988 ]
+[s S242 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"2404
+[u S256 . 1 `S242 1 . 1 0 `S251 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES256  1 e 1 @3990 ]
+"2540
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S1114 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"2704
+[s S1123 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S1127 . 1 `S1114 1 . 1 0 `S1123 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1127  1 e 1 @3998 ]
+[s S1360 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3055
+[s S1369 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S1372 . 1 `S1360 1 . 1 0 `S1369 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES1372  1 e 1 @4006 ]
+"3100
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"3107
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"3114
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"3121
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"3331
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"3587
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"3599
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"3611
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"3623
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S1013 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"4188
+[s S1022 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S1027 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S1030 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S1033 . 1 `S1013 1 . 1 0 `S1022 1 . 1 0 `S1027 1 . 1 0 `S1030 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES1033  1 e 1 @4024 ]
+"4645
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4716
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4801
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S904 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4845
+[s S907 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S911 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S918 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S921 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S924 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S927 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S930 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S933 . 1 `S904 1 . 1 0 `S907 1 . 1 0 `S911 1 . 1 0 `S918 1 . 1 0 `S921 1 . 1 0 `S924 1 . 1 0 `S927 1 . 1 0 `S930 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES933  1 e 1 @4034 ]
+"4934
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"6100
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"6183
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"6260
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S30 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6733
+[s S39 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S48 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S52 . 1 `S30 1 . 1 0 `S39 1 . 1 0 `S48 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES52  1 e 1 @4082 ]
+"8513
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"9 C:\Users\nurco\MPLABXProjects\P2B_2.X\CURRENT_TIME.c
+[v _TimerCurrentTime TimerCurrentTime `ul  1 e 4 0 ]
+"44 C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+[v _Rows Rows `uc  1 s 1 Rows ]
+[v _Columns Columns `uc  1 s 1 Columns ]
+"45
+[v _RowAct RowAct `uc  1 s 1 RowAct ]
+[v _ColumnAct ColumnAct `uc  1 s 1 ColumnAct ]
+"46
+[v _Timer Timer `uc  1 s 1 Timer ]
+"203
+[v _estat_string estat_string `uc  1 e 1 0 ]
+"204
+[v _j j `ui  1 e 2 0 ]
+"6 C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+[v _estat_sio estat_sio `uc  1 e 1 0 ]
+"7
+[v _flag_tad_sio flag_tad_sio `uc  1 e 1 0 ]
+"9 C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+[v _TimerTiempoNota TimerTiempoNota `uc  1 e 1 0 ]
+"14
+[v _TimerMelody TimerMelody `uc  1 e 1 0 ]
+"16
+[v _p p `uc  1 e 1 0 ]
+"7 C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+[v _estat_joy estat_joy `uc  1 e 1 0 ]
+"8
+[v _joy_direction joy_direction `uc  1 e 1 0 ]
+"9
+[v _valor_ADRESH valor_ADRESH `uc  1 e 1 0 ]
+"26 C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+[v _flag_TTeclat_menu flag_TTeclat_menu `uc  1 e 1 0 ]
+"34
+[v _estat_menu estat_menu `uc  1 e 1 0 ]
+"36
+[v _tower_name_position tower_name_position `uc  1 e 1 0 ]
+"38
+[v _flag_putstring flag_putstring `uc  1 e 1 0 ]
+"41
+[v _flag_startmenu flag_startmenu `uc  1 e 1 0 ]
+"43
+[v _TimerRecording TimerRecording `uc  1 e 1 0 ]
+"44
+[v _TimerMarquesina TimerMarquesina `uc  1 e 1 0 ]
+"47
+[v _timer_2s timer_2s `uc  1 e 1 0 ]
+"78
+[v _dest_port dest_port `[4]uc  1 e 4 0 ]
+"79
+[v _rec_port rec_port `[4]uc  1 e 4 0 ]
+"80
+[v _user_name user_name `[3]uc  1 e 3 0 ]
+"12 C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+[v _mostres mostres `ui  1 e 2 0 ]
+"15
+[v _TimerRecordingADC TimerRecordingADC `uc  1 e 1 0 ]
+"7 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+[v _flag_preemenu flag_preemenu `uc  1 e 1 0 ]
+"8
+[v _flagAltaveu_teclat flagAltaveu_teclat `uc  1 e 1 0 ]
+"9
+[v _flag_TTeclat flag_TTeclat `uc  1 e 1 0 ]
+"10
+[v _caracters_escrits_menu caracters_escrits_menu `uc  1 e 1 0 ]
+"11
+[v _estat_teclat estat_teclat `uc  1 e 1 0 ]
+"12
+[v _rows rows `uc  1 e 1 0 ]
+"14
+[v _hi_ha_tecla hi_ha_tecla `uc  1 e 1 0 ]
+"15
+[v _columna_polsada columna_polsada `uc  1 e 1 0 ]
+"16
+[v _caracter_actual caracter_actual `uc  1 e 1 0 ]
+"17
+[v _TimerRebots TimerRebots `uc  1 e 1 0 ]
+"18
+[v _Timer1S Timer1S `uc  1 e 1 0 ]
+"19
+[v _espera espera `uc  1 e 1 0 ]
+"20
+[v _timer_tics timer_tics `ul  1 e 4 0 ]
+"21
+[v _timer_tics_1s timer_tics_1s `ul  1 e 4 0 ]
+"22
+[v _caracters_escrits caracters_escrits `uc  1 e 1 0 ]
+"23
+[v _fila_matriu fila_matriu `uc  1 e 1 0 ]
+"24
+[v _old_fila_matriu old_fila_matriu `uc  1 e 1 0 ]
+"25
+[v _tower_name tower_name `[4]uc  1 e 4 0 ]
+"26
+[v _matriu_teclat matriu_teclat `[11][6]uc  1 e 66 0 ]
+[s S24 Timer 5 `ul 1 TicsInicials 4 0 `uc 1 Busy 1 4 ]
+"21 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+[v _Timers Timers `[9]S24  1 s 45 Timers ]
+"23
+[v _Tics Tics `VEul  1 s 4 Tics ]
+"57 C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"82
+} 0
+"11 C:\Users\nurco\MPLABXProjects\P2B_2.X\SIO.c
+[v _sioInit sioInit `(v  1 e 1 0 ]
+{
+"24
+} 0
+"234 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+[v _motorTeclat motorTeclat `(v  1 e 1 0 ]
+{
+"335
+} 0
+"197
+[v _writeCaracter writeCaracter `(v  1 e 1 0 ]
+{
+"224
+} 0
+"228
+[v _waitTeclaTreta waitTeclaTreta `(v  1 e 1 0 ]
+{
+"232
+} 0
+"68
+[v _setFiles setFiles `(v  1 e 1 0 ]
+{
+[v setFiles@rows rows `uc  1 a 1 wreg ]
+[v setFiles@rows rows `uc  1 a 1 wreg ]
+"70
+[v setFiles@rows rows `uc  1 a 1 0 ]
+"95
+} 0
+"115
+[v _saveTecla saveTecla `(v  1 e 1 0 ]
+{
+"191
+} 0
+"97
+[v _comprovaHiHaColumna comprovaHiHaColumna `(uc  1 e 1 0 ]
+{
+"113
+} 0
+"144 C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+[v _Getflag_TTeclat Getflag_TTeclat `(uc  1 e 1 0 ]
+{
+"146
+} 0
+"157
+[v _motorMenu motorMenu `(v  1 e 1 0 ]
+{
+"248
+} 0
+"58 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+[v _getTowerName getTowerName `(uc  1 e 1 0 ]
+{
+[v getTowerName@p p `uc  1 a 1 wreg ]
+[v getTowerName@p p `uc  1 a 1 wreg ]
+[v getTowerName@p p `uc  1 a 1 0 ]
+"60
+} 0
+"65
+[v _getEspera getEspera `(uc  1 e 1 0 ]
+{
+"67
+} 0
+"61
+[v _getCaractersEscrits getCaractersEscrits `(uc  1 e 1 0 ]
+{
+"63
+} 0
+"206 C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+[v _MyPutString MyPutString `(uc  1 e 1 0 ]
+{
+[v MyPutString@frase frase `*.31uc  1 p 1 22 ]
+"232
+} 0
+"162
+[v _LcPutChar LcPutChar `(v  1 e 1 0 ]
+{
+[v LcPutChar@c c `uc  1 a 1 wreg ]
+[v LcPutChar@c c `uc  1 a 1 wreg ]
+"172
+[v LcPutChar@c c `uc  1 a 1 21 ]
+"193
+} 0
+"135
+[v _LcGotoXY LcGotoXY `(v  1 e 1 0 ]
+{
+[v LcGotoXY@Column Column `uc  1 a 1 wreg ]
+"139
+[v LcGotoXY@Fisics Fisics `i  1 a 2 18 ]
+"135
+[v LcGotoXY@Column Column `uc  1 a 1 wreg ]
+[v LcGotoXY@Row Row `uc  1 p 1 13 ]
+[v LcGotoXY@Column Column `uc  1 a 1 20 ]
+"160
+} 0
+"279
+[v _CantaData CantaData `(v  1 e 1 0 ]
+{
+[v CantaData@Data Data `uc  1 a 1 wreg ]
+[v CantaData@Data Data `uc  1 a 1 wreg ]
+[v CantaData@Data Data `uc  1 a 1 2 ]
+"293
+} 0
+"114
+[v _LcClear LcClear `(v  1 e 1 0 ]
+{
+"119
+} 0
+"22 C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+[v _motorJoy motorJoy `(v  1 e 1 0 ]
+{
+"60
+} 0
+"41 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTECLAT.c
+[v _initTeclat initTeclat `(v  1 e 1 0 ]
+{
+"54
+} 0
+"25 C:\Users\nurco\MPLABXProjects\P2B_2.X\TRECORDING.c
+[v _initMicro initMicro `(v  1 e 1 0 ]
+{
+"29
+} 0
+"28 C:\Users\nurco\MPLABXProjects\P2B_2.X\TEEPROM.c
+[v _initEEPROM initEEPROM `(v  1 e 1 0 ]
+{
+"32
+} 0
+"36 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+[v _TI_Init TI_Init `(v  1 e 1 0 ]
+{
+"37
+[v TI_Init@counter counter `uc  1 a 1 0 ]
+"45
+} 0
+"121 C:\Users\nurco\MPLABXProjects\P2B_2.X\TMENU.c
+[v _Menu_Init Menu_Init `(v  1 e 1 0 ]
+{
+"132
+} 0
+"68 C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+[v _LcInit LcInit `(v  1 e 1 0 ]
+{
+[v LcInit@rows rows `uc  1 a 1 wreg ]
+"75
+[v LcInit@i i `i  1 a 2 23 ]
+"68
+[v LcInit@rows rows `uc  1 a 1 wreg ]
+[v LcInit@columns columns `uc  1 p 1 21 ]
+"76
+[v LcInit@rows rows `uc  1 a 1 22 ]
+"107
+} 0
+"295
+[v _WaitForBusy WaitForBusy `(v  1 e 1 0 ]
+{
+[v WaitForBusy@Busy Busy `uc  1 a 1 12 ]
+"311
+} 0
+"244
+[v _Espera Espera `(v  1 e 1 0 ]
+{
+[v Espera@Timer Timer `uc  1 a 1 wreg ]
+[v Espera@Timer Timer `uc  1 a 1 wreg ]
+[v Espera@ms ms `i  1 p 2 12 ]
+[v Espera@Timer Timer `uc  1 a 1 20 ]
+"247
+} 0
+"62 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+[v _TI_GetTics TI_GetTics `(ul  1 e 4 0 ]
+{
+"63
+[v TI_GetTics@CopiaTicsActual CopiaTicsActual `ul  1 a 4 8 ]
+"62
+[v TI_GetTics@TimerHandle TimerHandle `ul  1 p 4 0 ]
+"65
+} 0
+"313 C:\Users\nurco\MPLABXProjects\P2B_2.X\LCD.c
+[v _EscriuPrimeraOrdre EscriuPrimeraOrdre `(v  1 e 1 0 ]
+{
+[v EscriuPrimeraOrdre@ordre ordre `uc  1 a 1 wreg ]
+[v EscriuPrimeraOrdre@ordre ordre `uc  1 a 1 wreg ]
+"315
+[v EscriuPrimeraOrdre@ordre ordre `uc  1 a 1 1 ]
+"322
+} 0
+"263
+[v _CantaIR CantaIR `(v  1 e 1 0 ]
+{
+[v CantaIR@IR IR `uc  1 a 1 wreg ]
+[v CantaIR@IR IR `uc  1 a 1 wreg ]
+[v CantaIR@IR IR `uc  1 a 1 2 ]
+"277
+} 0
+"256
+[v _CantaPartBaixa CantaPartBaixa `(v  1 e 1 0 ]
+{
+[v CantaPartBaixa@c c `uc  1 a 1 wreg ]
+[v CantaPartBaixa@c c `uc  1 a 1 wreg ]
+[v CantaPartBaixa@c c `uc  1 a 1 1 ]
+"261
+} 0
+"249
+[v _CantaPartAlta CantaPartAlta `(v  1 e 1 0 ]
+{
+[v CantaPartAlta@c c `uc  1 a 1 wreg ]
+[v CantaPartAlta@c c `uc  1 a 1 wreg ]
+[v CantaPartAlta@c c `uc  1 a 1 1 ]
+"254
+} 0
+"28 C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+[v _InitconfOsc InitconfOsc `(v  1 e 1 0 ]
+{
+"39
+} 0
+"19 C:\Users\nurco\MPLABXProjects\P2B_2.X\TALTAVEU.c
+[v _InitAltaveu InitAltaveu `(v  1 e 1 0 ]
+{
+"27
+} 0
+"57 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+[v _TI_ResetTics TI_ResetTics `(v  1 e 1 0 ]
+{
+[v TI_ResetTics@TimerHandle TimerHandle `uc  1 a 1 wreg ]
+[v TI_ResetTics@TimerHandle TimerHandle `uc  1 a 1 wreg ]
+[v TI_ResetTics@TimerHandle TimerHandle `uc  1 a 1 0 ]
+"59
+} 0
+"47
+[v _TI_NewTimer TI_NewTimer `(uc  1 e 1 0 ]
+{
+"48
+[v TI_NewTimer@Comptador Comptador `uc  1 a 1 2 ]
+"47
+[v TI_NewTimer@TimerHandle TimerHandle `*.30uc  1 p 1 0 ]
+"55
+} 0
+"13 C:\Users\nurco\MPLABXProjects\P2B_2.X\TJOYSTICK.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"18
+} 0
+"23 C:\Users\nurco\MPLABXProjects\P2B_2.X\newmain.c
+[v _my_interrupts my_interrupts `IIH(v  1 e 1 0 ]
+{
+"26
+} 0
+"25 C:\Users\nurco\MPLABXProjects\P2B_2.X\TTIMER.c
+[v _RSI_Timer0 RSI_Timer0 `(v  1 e 1 0 ]
+{
+"34
+} 0
