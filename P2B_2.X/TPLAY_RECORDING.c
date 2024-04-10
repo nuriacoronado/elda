@@ -27,11 +27,6 @@ void motorPlayRecording(){
             flag_end_playing = 0;
             if(waitForSend() == 1){
                 estat_play = 2; 
-                
-                
-                
-                
-                
             }
             break;
         case 2:
