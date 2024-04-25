@@ -1,0 +1,3 @@
+#ifndef TRECORDING_H
+#define	TRECORDING_H
+

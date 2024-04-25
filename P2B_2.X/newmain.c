@@ -10,6 +10,7 @@
 #include "TRECORDING.h"
 #include "TEEPROM.h"
 #include "TPLAY_RECORDING.h"
+#include "TWIFI.h"
 
 #pragma config OSC = INTIO1 //32
 #pragma config PBADEN = DIG
@@ -70,9 +71,10 @@ void  main(void){
     
     while(1){
         //MOTORS
-        motorMenu();
-        motorTeclat();
-        motorJoy();
+        
+        //motorMenu();
+        //motorTeclat();
+        //motorJoy();
         //motorShowCurrentTime();
         //motorAltaveu();
         //motorRecording();
